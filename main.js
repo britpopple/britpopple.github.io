@@ -791,7 +791,7 @@ var app = (function() {
             Q(a.$$.fragment),
             (l = x()),
             (u = w("h1")),
-            (u.textContent = new Date().getTime() < new Date("2023-10-11T00:00:00").getTime() ? "Britpopple Made In MCR" : "Britpopple"),
+            (u.textContent = 'Britpopple'),
             (c = x()),
             (d = w("div")),
             Q(h.$$.fragment),
@@ -9082,7 +9082,7 @@ var app = (function() {
       );
     })();
   });
-  const Cn = ue([
+  const Songlist = [
 "Spacehog - In the Meantime",
 "Echobelly - Insomniac",
 "Hurricane #1 - Just Another Illusion",
@@ -9461,9 +9461,8 @@ var app = (function() {
 "James - Say Something",
 "Oasis - Champagne Supernova",
 "Catatonia - Strange Glue",
-  ]),
-    On = {
-      subscribe: ue([
+];
+const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
 { url: "https://soundcloud.com/echobellymusic/insomniac-album-version", answer: "Echobelly - Insomniac" },
 { url: "https://soundcloud.com/hurricane-1-official/just-another-illusion-album-1", answer: "Hurricane #1 - Just Another Illusion" },
@@ -9803,12 +9802,12 @@ var app = (function() {
 { url: "https://soundcloud.com/blurofficial/charmless-man", answer: "Blur - Charmless Man", startAtMs: 6550 },
 { url: "https://soundcloud.com/oasisofficial/acquiesce", answer: "Oasis - Acquiesce" },
 { url: "https://soundcloud.com/symposiumuk/03-farewell-to-twilight", answer: "Symposium - Farewell to Twilight" },
-{ url: "https://soundcloud.com/morrisseyofficial/everyday-is-like-sunday-2011", answer: "Morrissey - Everyday Is Like Sunday" },
+{ url: "https://soundcloud.com/morrisseyofficial/everyday-is-like-sunday-2011", answer: "Morrissey - Everyday Is Like Sunday", title: "Made in MCR" },
 { url: "https://soundcloud.com/thesmiths/what-difference-does-it-make-2", answer: "The Smiths - What Difference Does It Make?", startAtMs: 2500 },
 { url: "https://soundcloud.com/buzzcocks-official/ever-fallen-in-love-with-4", answer: "Buzzcocks - Ever Fallen in Love (With Someone You Shouldn't've?)" },
 { url: "https://soundcloud.com/courteeners/acrylic", answer: "Courteeners - Acrylic", startAtMs: 500 },
 { url: "https://soundcloud.com/joy-division-3/transmission-1", answer: "Joy Division - Transmission", startAtMs: 1000 },
-{ url: "https://soundcloud.com/neworderofficial/regret", answer: "New Order - Regret", startAtMs: 1500 },
+{ url: "https://soundcloud.com/neworderofficial/regret", answer: "New Order - Regret", startAtMs: 1150 },
 { url: "https://soundcloud.com/happy-mondays-official/step-on-1", answer: "Happy Mondays - Step On", startAtMs: 500 },
 { url: "https://soundcloud.com/inspiralcarpetsmusic/this-is-how-it-feels", answer: "Inspiral Carpets - This Is How It Feels" },
 { url: "https://soundcloud.com/doves-official/catch-the-sun", answer: "Doves - Catch The Sun" },
@@ -9842,9 +9841,10 @@ var app = (function() {
 { url: "https://soundcloud.com/james-the-band/say-something", answer: "James - Say Something" },
 { url: "https://soundcloud.com/oasisofficial/champagne-supernova-2", answer: "Oasis - Champagne Supernova" },
 { url: "https://soundcloud.com/catatoniaofficial/catatonia-strange-glue", answer: "Catatonia - Strange Glue", startAtMs: 11000 },
-],
-        Pn
-      ).subscribe,
+];
+  const Cn = ue(Songlist),
+    On = {
+      subscribe: ue(Songbook, Pn).subscribe,
     }
 const Playlist = [
 0,
@@ -10392,6 +10392,7 @@ const Playlist = [
 248,
 212,
 377,
+344,
 ];
   var Pn;
   const {
