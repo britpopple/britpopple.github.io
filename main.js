@@ -791,7 +791,7 @@ var app = (function() {
             Q(a.$$.fragment),
             (l = x()),
             (u = w("h1")),
-            (u.textContent = 'Britpopple'),
+            (u.textContent = SongOfTheDay().title || 'Britpopple'),
             (c = x()),
             (d = w("div")),
             Q(h.$$.fragment),
@@ -4659,7 +4659,7 @@ var app = (function() {
         c,
         () => {
           // console.log('answer', r.length)
-          let e = ((new Date().getTime() < new Date("2023-10-11T00:00:00").getTime()) ? "Britpopple Made In MCR #" : "Britpopple #") + (s.id + 1),
+          let e = (SongOfTheDay().title || "Britpopple") + " #" + (s.id + 1),
             t = "";
           a
             ?
@@ -4682,7 +4682,7 @@ var app = (function() {
             "\n\n" +
             t +
             "\n\n" +
-            ((new Date().getTime() < new Date("2023-10-11T00:00:00").getTime()) ? "@Britpopple #MadeInMCR #Heardle" : "#Britpopple #Heardle @Britpopple") +
+            (SongOfTheDay().shareTags || "#Britpopple #Heardle @Britpopple") +
             "\n\n" +
             "https://britpopple.glitch.me/";
           if (
@@ -9082,6 +9082,14 @@ var app = (function() {
       );
     })();
   });
+  const SongId = (e) => {
+      var hash = window.location.hash.substr(1);
+      if (hash && !isNaN(hash)) {
+        return hash - 1;
+      }
+      var t = Yn(e, "YYYY-MM-DD");
+      return Yn().diff(t, "days");
+    };
   const Songlist = [
 "Spacehog - In the Meantime",
 "Echobelly - Insomniac",
@@ -9487,7 +9495,7 @@ const Songbook = [
 { url: "https://soundcloud.com/stereophonicsofficial/traffic-album-version", answer: "Stereophonics - Traffic" },
 { url: "https://soundcloud.com/blurofficial/end-of-a-century", answer: "Blur - End of a Century" },
 { url: "https://soundcloud.com/gene-official/olympian", answer: "Gene - Olympian" },
-{ url: "https://soundcloud.com/the-stone-roses/fools-gold-remastered", answer: "The Stone Roses - Fools Gold" },
+{ url: "https://soundcloud.com/the-stone-roses/fools-gold-remastered", answer: "The Stone Roses - Fools Gold", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 { url: "https://soundcloud.com/longpigs/on-on-album-version", answer: "Longpigs - On & On" },
 { url: "https://soundcloud.com/oasisofficial/live-forever-2", answer: "Oasis - Live Forever", startAtMs: 1000 },
 { url: "https://soundcloud.com/suede-official/animal-nitrate-1", answer: "Suede - Animal Nitrate", startAtMs: 1500 },
@@ -9802,18 +9810,18 @@ const Songbook = [
 { url: "https://soundcloud.com/blurofficial/charmless-man", answer: "Blur - Charmless Man", startAtMs: 6550 },
 { url: "https://soundcloud.com/oasisofficial/acquiesce", answer: "Oasis - Acquiesce" },
 { url: "https://soundcloud.com/symposiumuk/03-farewell-to-twilight", answer: "Symposium - Farewell to Twilight" },
-{ url: "https://soundcloud.com/morrisseyofficial/everyday-is-like-sunday-2011", answer: "Morrissey - Everyday Is Like Sunday", title: "Made in MCR" },
-{ url: "https://soundcloud.com/thesmiths/what-difference-does-it-make-2", answer: "The Smiths - What Difference Does It Make?", startAtMs: 2500 },
-{ url: "https://soundcloud.com/buzzcocks-official/ever-fallen-in-love-with-4", answer: "Buzzcocks - Ever Fallen in Love (With Someone You Shouldn't've?)" },
-{ url: "https://soundcloud.com/courteeners/acrylic", answer: "Courteeners - Acrylic", startAtMs: 500 },
-{ url: "https://soundcloud.com/joy-division-3/transmission-1", answer: "Joy Division - Transmission", startAtMs: 1000 },
+{ url: "https://soundcloud.com/morrisseyofficial/everyday-is-like-sunday-2011", answer: "Morrissey - Everyday Is Like Sunday", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/thesmiths/what-difference-does-it-make-2", answer: "The Smiths - What Difference Does It Make?", startAtMs: 2500, title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/buzzcocks-official/ever-fallen-in-love-with-4", answer: "Buzzcocks - Ever Fallen in Love (With Someone You Shouldn't've?)", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/courteeners/acrylic", answer: "Courteeners - Acrylic", startAtMs: 500, title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/joy-division-3/transmission-1", answer: "Joy Division - Transmission", startAtMs: 1000, title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 { url: "https://soundcloud.com/neworderofficial/regret", answer: "New Order - Regret", startAtMs: 1150 },
-{ url: "https://soundcloud.com/happy-mondays-official/step-on-1", answer: "Happy Mondays - Step On", startAtMs: 500 },
-{ url: "https://soundcloud.com/inspiralcarpetsmusic/this-is-how-it-feels", answer: "Inspiral Carpets - This Is How It Feels" },
-{ url: "https://soundcloud.com/doves-official/catch-the-sun", answer: "Doves - Catch The Sun" },
+{ url: "https://soundcloud.com/happy-mondays-official/step-on-1", answer: "Happy Mondays - Step On", startAtMs: 500, title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/inspiralcarpetsmusic/this-is-how-it-feels", answer: "Inspiral Carpets - This Is How It Feels", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/doves-official/catch-the-sun", answer: "Doves - Catch The Sun", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 { url: "https://soundcloud.com/oasisofficial/round-are-way-1", answer: "Oasis - Round Are Way" },
-{ url: "https://soundcloud.com/courteeners/not-nineteen-forever", answer: "Courteeners - Not Nineteen Forever", startAtMs: 500 },
-{ url: "https://soundcloud.com/neworderofficial/bizarre-love-triangle-2015", answer: "New Order - Bizarre Love Triangle" },
+{ url: "https://soundcloud.com/courteeners/not-nineteen-forever", answer: "Courteeners - Not Nineteen Forever", startAtMs: 500, title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/neworderofficial/bizarre-love-triangle-2015", answer: "New Order - Bizarre Love Triangle", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 { url: "https://soundcloud.com/james-the-band/waltzing-along-single-version", answer: "James - Waltzing Along" },
 { url: "https://soundcloud.com/manicstreetpreachers/from-despair-to-where-album", answer: "Manic Street Preachers - From Despair to Where" },
 { url: "https://soundcloud.com/oasisofficial/stay-young", answer: "Oasis - Stay Young" },
@@ -10394,6 +10402,7 @@ const Playlist = [
 377,
 344,
 ];
+const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
   const {
     document: An,
@@ -10963,12 +10972,7 @@ const Playlist = [
     }
 
     function x(e) {
-      var hash = window.location.hash.substr(1);
-      if (hash && !isNaN(hash)) {
-        return hash - 1;
-      }
-      var t = Yn(e, "YYYY-MM-DD");
-      return Yn().diff(t, "days");
+      return SongId(e);
     }
     null == localStorage.getItem("firstTime") &&
       (_("help", "how to play"), localStorage.setItem("firstTime", "false"));
