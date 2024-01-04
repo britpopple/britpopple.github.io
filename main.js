@@ -9469,6 +9469,7 @@ var app = (function() {
 "James - Say Something",
 "Oasis - Champagne Supernova",
 "Catatonia - Strange Glue",
+"ASH - A Life Less Ordinary",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -9849,6 +9850,7 @@ const Songbook = [
 { url: "https://soundcloud.com/james-the-band/say-something", answer: "James - Say Something" },
 { url: "https://soundcloud.com/oasisofficial/champagne-supernova-2", answer: "Oasis - Champagne Supernova" },
 { url: "https://soundcloud.com/catatoniaofficial/catatonia-strange-glue", answer: "Catatonia - Strange Glue", startAtMs: 11000 },
+{ url: "https://soundcloud.com/ash/a-life-less-ordinary", answer: "ASH - A Life Less Ordinary" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -10401,6 +10403,7 @@ const Playlist = [
 212,
 377,
 344,
+378,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
