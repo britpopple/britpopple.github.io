@@ -54,3 +54,6 @@ button:focus {
 button:not(:disabled):active {
     background-color: #dddddd;
 }
+main {
+    min-height: 85vh;
+}
