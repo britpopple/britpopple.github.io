@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Receive stats from britpopple.glitch.me</title>
+</head>
+<body>
+  <h1>britpopple.github.io</h1>
+  <script>
+    window.addEventListener('message', (event) => {
+      if (event.origin !== 'https://britpopple.glitch.me') return;
+
+      if (event.data.type === 'COPY_STORAGE') {
+        const storageData = event.data.data;
+        for (const key in storageData) {
+          alert('received key ' + key);
+          localStorage.setItem(key, storageData[key]);
+        }
+        alert('Stats copied successfully!');
+      }
+    });
+  </script>
+</body>
+</html>
