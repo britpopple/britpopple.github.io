@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backup & Restore localStorage</title>
+</head>
+<body>
+  <h1>localStorage Backup & Restore</h1>
+
+  <button onclick="downloadLocalStorage()">🔽 Download localStorage</button>
+  <br><br>
+
+  <input type="file" id="fileInput" accept="application/json" />
+  <button onclick="uploadLocalStorage()">🔼 Restore localStorage</button>
+
+  <script>
+    function downloadLocalStorage() {
+      const data = {};
+
+      // Collect all localStorage items
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        data[key] = localStorage.getItem(key);
+      }
+
+      const json = JSON.stringify(data, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'localStorage-backup.json';
+      a.click();
+
+      URL.revokeObjectURL(url);
+    }
+
+    function uploadLocalStorage() {
+      const input = document.getElementById('fileInput');
+      const file = input.files[0];
+
+      if (!file) {
+        alert("Please select a JSON file first.");
+        return;
+      }
+
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        try {
+          const data = JSON.parse(e.target.result);
+          for (const key in data) {
+            localStorage.setItem(key, data[key]);
+          }
+          alert("localStorage restored successfully!");
+        } catch (err) {
+          alert("Error parsing JSON file: " + err.message);
+        }
+      };
+
+      reader.readAsText(file);
+    }
+  </script>
+</body>
+</html>
