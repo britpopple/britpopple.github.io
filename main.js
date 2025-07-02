@@ -4018,7 +4018,7 @@ var app = (function() {
       P(async function() {
         (async function() {
           const e = await fetch(
-            "https://wjsn-heardle.glitch.me/supporters.json"
+            "supporters.json"
           );
           return await e.json();
         })().then((e) => {
@@ -4684,7 +4684,7 @@ var app = (function() {
             "\n\n" +
             (SongOfTheDay().shareTags || "#Britpopple #Heardle @Britpopple") +
             "\n\n" +
-            "https://britpopple.glitch.me/";
+            "https://www.britpopple.uk/";
           if (
             !navigator.share ||
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
