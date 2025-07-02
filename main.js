@@ -4890,6 +4890,8 @@ var app = (function() {
       G,
       E,
       j,
+      K,
+      K1,
       B = (e[6] > 0 ? ((e[8] / e[6]) * 100).toFixed(1) : 0) + "",
       z = e[7].slice(-1)[0] + "",
       U = Math.max(...e[7]) + "",
@@ -4938,6 +4940,9 @@ var app = (function() {
         (E = x()),
         (j = w("div")),
         (j.textContent = "Max Streak"),
+        (K = w("a")),
+        (K.textContent = "Manage Stats"),
+        (K1 = w("div")),
         M(t, "class", "flex justify-between py-3"),
           M(i, "class", "text-xl font-semibold"),
           M(l, "class", "text-custom-line text-sm "),
@@ -4954,6 +4959,9 @@ var app = (function() {
           M(A, "class", "flex-1"),
           M(F, "class", "text-xl font-semibold"),
           M(j, "class", "text-custom-line text-sm"),
+          M(K1, "class", "justify-center flex py-2 mt-2"),
+          M(K, "class", "px-2 py-2 uppercase tracking-widest border-none flex items-center font-semibold text-sm svelte-1r54uzk bg-custom-positive"),
+          M(K, "href", "stats.html"),
           M(R, "class", "flex-1"),
           M(P, "class", "flex justify-between text-center w-full py-3 pt-0");
       },
@@ -4992,7 +5000,9 @@ var app = (function() {
           p(R, F),
           p(F, G),
           p(R, E),
-          p(R, j);
+          p(R, j),
+          p(K1, K),
+          g(e, K1, y);
       },
       p(e, n) {
         if (1567 & n) {
