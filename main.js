@@ -9931,7 +9931,7 @@ const Songbook = [
 { url: "https://soundcloud.com/the-bluetones/cut-some-rug", answer: "The Bluetones - Cut Some Rug" },
 { url: "https://soundcloud.com/suede-official/stay-together", answer: "Suede - Stay Together", startAtMs: 1500 },
 { url: "https://soundcloud.com/catatoniaofficial/game-on", answer: "Catatonia - Game On" },
-{ url: "https://soundcloud.com/longpigs/jesus-christ-album-version", answer: "Longpigs - Jesus Christ", startAtMs: 350 },
+{ url: "https://soundcloud.com/longpigs/jesus-christ-album-version", answer: "Longpigs - Jesus Christ", startAtMs: 500 },
 { url: "https://soundcloud.com/oasisofficial/shes-electric", answer: "Oasis - She's Electric" },
 { url: "https://soundcloud.com/echobellymusic/the-world-is-flat-album", answer: "Echobelly - The World Is Flat" },
 { url: "https://soundcloud.com/stereophonicsofficial/just-looking-1", answer: "Stereophonics - Just Looking" },
@@ -11157,6 +11157,10 @@ const Playlist = [
 139,
 195,
 238,
+368,
+133,
+364,
+153,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
