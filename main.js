@@ -9566,6 +9566,9 @@ var app = (function() {
 "My Life Story - 12 Reasons Why I Love Her",
 "The Stone Roses - Driving South",
 "Blur - Jubilee",
+"Oasis - I Am The Walrus",
+"The Supernaturals - Smile",
+"Skunk Anansie - Weak",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -10033,6 +10036,9 @@ const Songbook = [
 { url: "https://soundcloud.com/mylifestory/12-reasons-why-i-love-her", answer: "My Life Story - 12 Reasons Why I Love Her", startAtMs: 1500 },
 { url: "https://soundcloud.com/the-stone-roses/driving-south", answer: "The Stone Roses - Driving South" },
 { url: "https://soundcloud.com/blurofficial/jubilee-live-at-the-budokan", answer: "Blur - Jubilee", startAtMs: 700, title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/oasisofficial/i-am-the-walrus-remastered", answer: "Oasis - I Am The Walrus", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/the-supernaturals/supernaturals-smile-astoria", answer: "The Supernaturals - Smile", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/skunk-anansie-official/weak-live", answer: "Skunk Anansie - Weak", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11200,6 +11206,7 @@ const Playlist = [
 378,
 226,
 464,
+466,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
