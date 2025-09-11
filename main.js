@@ -10038,7 +10038,10 @@ const Songbook = [
 { url: "https://soundcloud.com/blurofficial/jubilee-live-at-the-budokan", answer: "Blur - Jubilee", startAtMs: 700, title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 { url: "https://soundcloud.com/oasisofficial/i-am-the-walrus-remastered", answer: "Oasis - I Am The Walrus", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 { url: "https://soundcloud.com/the-supernaturals/supernaturals-smile-astoria", answer: "The Supernaturals - Smile", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
-{ url: "https://soundcloud.com/skunk-anansie-official/weak-live", answer: "Skunk Anansie - Weak", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/skunk-anansie-official/weak-live", answer: "Skunk Anansie - Weak", startAtMs: 1350, title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/thecharlatans/the-only-one-i-know-live-at", answer: "The Charlatans - The Only One I Know", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/suede-official/new-generation-live-at-the", answer: "Suede - New Generation", startAtMs: 2800, title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/ocean-colour-scene-official/youve-got-it-bad-live", answer: "Ocean Colour Scene - You've Got It Bad", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11207,6 +11210,10 @@ const Playlist = [
 226,
 464,
 466,
+470,
+469,
+468,
+467,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
