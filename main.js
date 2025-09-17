@@ -9570,6 +9570,7 @@ var app = (function() {
 "The Supernaturals - Smile",
 "Skunk Anansie - Weak",
 "Oasis - Don't Look Back In Anger",
+"Supergrass - Sitting Up Straight",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -10045,6 +10046,7 @@ const Songbook = [
 { url: "https://soundcloud.com/ocean-colour-scene-official/youve-got-it-bad-live", answer: "Ocean Colour Scene - You've Got It Bad", title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 { url: "https://soundcloud.com/oasisofficial/dont-look-back-in-anger-live-2", answer: "Oasis - Don't Look Back In Anger", startAtMs: 700, title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 { url: "https://soundcloud.com/manicstreetpreachers/la-tristesse-durera-scream-6", answer: "Manic Street Preachers - La Tristesse Durera (Scream to a Sigh)", startAtMs: 1900, title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/supergrass-official/sitting-up-straight-live-at", answer: "Supergrass - Sitting Up Straight", startAtMs: 2700, title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11219,6 +11221,7 @@ const Playlist = [
 467,
 471,
 472,
+473,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
