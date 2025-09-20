@@ -9571,6 +9571,8 @@ var app = (function() {
 "Skunk Anansie - Weak",
 "Oasis - Don't Look Back In Anger",
 "Supergrass - Sitting Up Straight",
+"Super Furry Animals - Bad Behaviour",
+"Cast - Live The Dream",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -9788,7 +9790,7 @@ const Songbook = [
 { url: "https://soundcloud.com/manicstreetpreachers/australia-2016-remastered", answer: "Manic Street Preachers - Australia" },
 { url: "https://soundcloud.com/tim-booth-official/i-believe-album-version", answer: "Booth And The Bad Angel - I Believe", startAtMs: 900 },
 { url: "https://soundcloud.com/blurofficial/girls-and-boys", answer: "Blur - Girls & Boys" },
-{ url: "https://soundcloud.com/ian-brown-official/my-star-album-version", answer: "Ian Brown - My Star" },
+{ url: "https://soundcloud.com/ian-brown-official/my-star-2002", answer: "Ian Brown - My Star" },
 { url: "https://soundcloud.com/lush-official/ladykillers", answer: "Lush - Ladykillers" },
 { url: "https://soundcloud.com/thecharlatans/tellin-stories", answer: "The Charlatans - Tellin' Stories" },
 { url: "https://soundcloud.com/ash/angel-interceptor", answer: "ASH - Angel Interceptor" },
@@ -10049,6 +10051,8 @@ const Songbook = [
 { url: "https://soundcloud.com/supergrass-official/sitting-up-straight-live-at", answer: "Supergrass - Sitting Up Straight", startAtMs: 2700, title: "Britpopple Live", shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 { url: "https://soundcloud.com/gene-official/olympian-live", answer: "Gene - Olympian", title: "Britpopple Live", startAtMs: 3700, shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 { url: "https://soundcloud.com/pulp-official/common-people-live-glastonbury", answer: "Pulp - Common People", title: "Britpopple Live", startAtMs: 16500, shareTags: "@Britpopple #BritpoppleLive #Heardle" },
+{ url: "https://soundcloud.com/super-furry-animals/bad-behaviour-album-version", answer: "Super Furry Animals - Bad Behaviour" },
+{ url: "https://soundcloud.com/cast-official/live-the-dream", answer: "Cast - Live The Dream" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11226,6 +11230,10 @@ const Playlist = [
 473,
 475,
 230,
+220,
+477,
+372,
+235,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
