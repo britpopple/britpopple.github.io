@@ -9573,6 +9573,7 @@ var app = (function() {
 "Supergrass - Sitting Up Straight",
 "Super Furry Animals - Bad Behaviour",
 "Cast - Live The Dream",
+"Oasis - Shakermaker",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -10053,6 +10054,7 @@ const Songbook = [
 { url: "https://soundcloud.com/pulp-official/common-people-live-glastonbury", answer: "Pulp - Common People", title: "Britpopple Live", startAtMs: 16500, shareTags: "@Britpopple #BritpoppleLive #Heardle" },
 { url: "https://soundcloud.com/super-furry-animals/bad-behaviour-album-version", answer: "Super Furry Animals - Bad Behaviour" },
 { url: "https://soundcloud.com/cast-official/live-the-dream", answer: "Cast - Live The Dream" },
+{ url: "https://soundcloud.com/oasisofficial/shakermaker-remastered", answer: "Oasis - Shakermaker" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11245,6 +11247,7 @@ const Playlist = [
 240,
 429,
 15,
+478,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
