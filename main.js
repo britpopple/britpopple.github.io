@@ -11278,6 +11278,10 @@ const Playlist = [
 59,
 48,
 353,
+69,
+351,
+336,
+279,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
