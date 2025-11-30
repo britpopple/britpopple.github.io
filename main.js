@@ -9574,6 +9574,7 @@ var app = (function() {
 "Super Furry Animals - Bad Behaviour",
 "Cast - Live The Dream",
 "Oasis - Shakermaker",
+"Suede - She's in Fashion",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -10055,6 +10056,7 @@ const Songbook = [
 { url: "https://soundcloud.com/super-furry-animals/bad-behaviour-album-version", answer: "Super Furry Animals - Bad Behaviour" },
 { url: "https://soundcloud.com/cast-official/live-the-dream", answer: "Cast - Live The Dream" },
 { url: "https://soundcloud.com/oasisofficial/shakermaker-remastered", answer: "Oasis - Shakermaker" },
+{ url: "https://soundcloud.com/suede-official/shes-in-fashion-remastered", answer: "Suede - She's in Fashion" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11303,6 +11305,9 @@ const Playlist = [
 115,
 286,
 28,
+90,
+479,
+46,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
