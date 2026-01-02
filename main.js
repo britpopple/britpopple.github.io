@@ -9576,6 +9576,16 @@ var app = (function() {
 "Oasis - Shakermaker",
 "Suede - She's in Fashion",
 "Radiohead - Let Down",
+"The Stone Roses - One Love",
+"Nirvana - Smells Like Teen Spirit",
+"L7 - Pretend We're Dead",
+"The Breeders - Cannonball",
+"Beck - Loser",
+"Weezer - Buddy Holly",
+"Underworld - Born Slippy",
+"Daft Punk - Da Funk",
+"Beastie Boys - Intergalactic",
+"Flaming Lips - Race For The Prize",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -10059,6 +10069,16 @@ const Songbook = [
 { url: "https://soundcloud.com/oasisofficial/shakermaker-remastered", answer: "Oasis - Shakermaker" },
 { url: "https://soundcloud.com/suede-official/shes-in-fashion-remastered", answer: "Suede - She's in Fashion" },
 { url: "https://soundcloud.com/radiohead/let-down", answer: "Radiohead - Let Down" },
+{ url: "https://soundcloud.com/the-stone-roses/one-love", answer: "The Stone Roses - One Love", startAtMs: 500, title: "Britpopple AllOut90s 1990", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/nirvana/smells-like-teen-spirit-1", answer: "Nirvana - Smells Like Teen Spirit", startAtMs: 150, title: "Britpopple AllOut90s 1991", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/l7theband/pretend-were-dead", answer: "L7 - Pretend We're Dead", title: "Britpopple AllOut90s 1992", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/thebreeders/cannonball", answer: "The Breeders - Cannonball", title: "Britpopple AllOut90s 1993", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/planned_obsolescence/loser-album-version", answer: "Beck - Loser", startAtMs: 75, title: "Britpopple AllOut90s 1994", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/weezer/buddy-holly", answer: "Weezer - Buddy Holly", title: "Britpopple AllOut90s 1995", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/underworld/born-slippy-nuxx-1", answer: "Underworld - Born Slippy", startAtMs: 500, title: "Britpopple AllOut90s 1996", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/daftpunkofficialmusic/da-funk", answer: "Daft Punk - Da Funk", startAtMs: 7700, title: "Britpopple AllOut90s 1997", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/beastieboys/intergalactic-2009-digital", answer: "Beastie Boys - Intergalactic", title: "Britpopple AllOut90s 1998", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
+{ url: "https://soundcloud.com/warnerrecords/flaming-lips-race-for-the", answer: "Flaming Lips - Race For The Prize", startAtMs: 2500, title: "Britpopple AllOut90s 1999", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11340,6 +11360,16 @@ const Playlist = [
 337,
 396,
 237,
+481,
+482,
+483,
+484,
+485,
+486,
+487,
+488,
+489,
+490,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
