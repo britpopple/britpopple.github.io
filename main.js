@@ -9587,6 +9587,7 @@ var app = (function() {
 "Beastie Boys - Intergalactic",
 "Flaming Lips - Race For The Prize",
 "Badly Drawn Boy - Once Around The Block",
+"Super Furry Animals - Juxtapozed with U",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -10081,6 +10082,7 @@ const Songbook = [
 { url: "https://soundcloud.com/beastieboys/intergalactic-2009-digital", answer: "Beastie Boys - Intergalactic", title: "Britpopple AllOut90s 1998", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
 { url: "https://soundcloud.com/warnerrecords/flaming-lips-race-for-the", answer: "Flaming Lips - Race For The Prize", startAtMs: 2500, title: "Britpopple AllOut90s 1999", shareTags: "@Britpopple #BritpoppleAllOut90s #Heardle" },
 { url: "https://soundcloud.com/badlydrawnboy/once-around-the-block", answer: "Badly Drawn Boy - Once Around The Block", title: "Britpopple Disco 2000", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
+{ url: "https://soundcloud.com/super-furry-animals/juxtapozed-with-u-album", answer: "Super Furry Animals - Juxtapozed with U", title: "Britpopple Disco 2001", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11487,6 +11489,7 @@ const Playlist = [
 356,
 187,
 491,
+492,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
