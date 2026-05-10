@@ -9589,6 +9589,9 @@ var app = (function() {
 "Badly Drawn Boy - Once Around The Block",
 "Super Furry Animals - Juxtapozed with U",
 "The Coral - Pass It On",
+"The Futureheads - Hounds of Love",
+"Mystery Jets - Two Doors Down",
+"The Maccabees - No Kind Words",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -9792,9 +9795,9 @@ const Songbook = [
 { url: "https://soundcloud.com/oasisofficial/half-the-world-away", answer: "Oasis - Half The World Away" },
 { url: "https://soundcloud.com/pulp-official/disco-2000-album-version", answer: "Pulp - Disco 2000" },
 { url: "https://soundcloud.com/the-libertines-official/time-for-heroes", answer: "The Libertines - Time for Heroes", title: "Britpopple London Calling", shareTags: "@Britpopple #LondonCalling #Heardle" },
-{ url: "https://soundcloud.com/franzferdinand/take-me-out", answer: "Franz Ferdinand - Take Me Out", title: "Britpopple Disco 2000s", shareTags: "@Britpopple #Disco2000s #Heardle" },
+{ url: "https://soundcloud.com/franzferdinand/take-me-out", answer: "Franz Ferdinand - Take Me Out", title: "Britpopple Disco 2004", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
 { url: "https://soundcloud.com/editorsofficial/bullets", answer: "Editors - Bullets", title: "Britpopple Disco 2000s", shareTags: "@Britpopple #Disco2000s #Heardle" },
-{ url: "https://soundcloud.com/the-cribs/mens-needs", answer: "The Cribs - Men's Needs", title: "Britpopple Disco 2000s", shareTags: "@Britpopple #Disco2000s #Heardle" },
+{ url: "https://soundcloud.com/the-cribs/mens-needs", answer: "The Cribs - Men's Needs", title: "Britpopple Disco 2007", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
 { url: "https://soundcloud.com/doves-official/there-goes-the-fear", answer: "Doves - There Goes The Fear", title: "Britpopple Disco 2002", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
 { url: "https://soundcloud.com/kasabianofficial/l-s-f", answer: "Kasabian - L.S.F.", title: "Britpopple Disco 2000s", shareTags: "@Britpopple #Disco2000s #Heardle" },
 { url: "https://soundcloud.com/pjharvey/this-is-love", answer: "PJ Harvey - This Is Love", startAtMs: 500, title: "Britpopple Disco 2000s", shareTags: "@Britpopple #Disco2000s #Heardle" },
@@ -9973,7 +9976,7 @@ const Songbook = [
 { url: "https://soundcloud.com/liamgallagherofficial/just-another-rainbow", answer: "Liam Gallagher, John Squire - Just Another Rainbow", title: "Britpopple Afterglow", shareTags: "@Britpopple #Afterglow #Heardle" },
 { url: "https://soundcloud.com/shed-seven/talk-of-the-town", answer: "Shed Seven - Talk Of The Town", title: "Britpopple Afterglow", shareTags: "@Britpopple #Afterglow #Heardle" },
 { url: "https://soundcloud.com/ash/ash-burn-baby-burn", answer: "ASH - Burn Baby Burn", startAtMs: 2200, title: "Britpopple Afterglow", shareTags: "@Britpopple #Afterglow #Heardle" },
-{ url: "https://soundcloud.com/primalscream/country-girl", answer: "Primal Scream - Country Girl", title: "Britpopple Afterglow", shareTags: "@Britpopple #Afterglow #Heardle" },
+{ url: "https://soundcloud.com/primalscream/country-girl", answer: "Primal Scream - Country Girl", title: "Britpopple Disco 2006", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
 { url: "https://soundcloud.com/ian-brown-official/f-e-a-r-album-version", answer: "Ian Brown - F.E.A.R.", title: "Britpopple Afterglow", shareTags: "@Britpopple #Afterglow #Heardle" },
 { url: "https://soundcloud.com/super-furry-animals/hello-sunshine-2023-remaster", answer: "Super Furry Animals - Hello Sunshine", title: "Britpopple Afterglow", shareTags: "@Britpopple #Afterglow #Heardle" },
 { url: "https://soundcloud.com/blurofficial/out-of-time", answer: "Blur - Out Of Time", startAtMs: 500, title: "Britpopple Afterglow", shareTags: "@Britpopple #Afterglow #Heardle" },
@@ -10085,6 +10088,9 @@ const Songbook = [
 { url: "https://soundcloud.com/badlydrawnboy/once-around-the-block", answer: "Badly Drawn Boy - Once Around The Block", title: "Britpopple Disco 2000", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
 { url: "https://soundcloud.com/super-furry-animals/juxtapozed-with-u-album", answer: "Super Furry Animals - Juxtapozed with U", title: "Britpopple Disco 2001", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
 { url: "https://soundcloud.com/the-coral/pass-it-on", answer: "The Coral - Pass It On", title: "Britpopple Disco 2003", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
+{ url: "https://soundcloud.com/thefutureheadsofficial/the-futureheads-hounds-of-love", answer: "The Futureheads - Hounds of Love", title: "Britpopple Disco 2005", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
+{ url: "https://soundcloud.com/mysteryjets/two-doors-down", answer: "Mystery Jets - Two Doors Down", startAtMs: 2500, title: "Britpopple Disco 2008", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
+{ url: "https://soundcloud.com/the-maccabees/no-kind-words-album-version", answer: "The Maccabees - No Kind Words", title: "Britpopple Disco 2009", shareTags: "@Britpopple #BritpoppleDisco2000s #Heardle" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11494,6 +11500,12 @@ const Playlist = [
 492,
 204,
 493,
+201,
+494,
+382,
+203,
+495,
+496,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
