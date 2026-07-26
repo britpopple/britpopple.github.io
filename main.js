@@ -9595,6 +9595,7 @@ var app = (function() {
 "James - How Was It For You?",
 "The Cardigans - My Favourite Game",
 "Lilys - A Nanny in Manhattan",
+"Beck - Where It's At",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -10097,6 +10098,7 @@ const Songbook = [
 { url: "https://soundcloud.com/james-the-band/how-was-it-for-you", answer: "James - How Was It For You?" },
 { url: "https://soundcloud.com/thecardigans/my-favourite-game", answer: "The Cardigans - My Favourite Game", startAtMs: 350, title: "Britpopple World Tour", shareTags: "@Britpopple #WorldTour #Heardle" },
 { url: "https://soundcloud.com/lilys-official/a-nanny-in-manhattan", answer: "Lilys - A Nanny in Manhattan", title: "Britpopple World Tour", shareTags: "@Britpopple #WorldTour #Heardle" },
+{ url: "https://soundcloud.com/planned_obsolescence/where-its-at", answer: "Beck - Where It's At", startAtMs: 1000, title: "Britpopple World Tour", shareTags: "@Britpopple #WorldTour #Heardle" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11583,6 +11585,7 @@ const Playlist = [
 257,
 412,
 499,
+500,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
