@@ -2392,7 +2392,7 @@ var app = (function() {
       (e.allow = "autoplay; encrypted-media"),
       (e.height = 0),
       (e.src =
-        "https://w.soundcloud.com/player/?url=" + h.url + "&cache=" + h.id),
+        "https://w.soundcloud.com/player/?url=" + h.url + "&cache=" + h.id + "&show_media_metadata=false"),
       D.appendChild(e),
         (_ = !0),
         k &&
