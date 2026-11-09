@@ -9599,6 +9599,13 @@ var app = (function() {
 "Foo Fighters - This Is A Call",
 "Manic Street Preachers - You Love Us",
 "Manic Street Preachers - Faster",
+"The Stone Roses - Sally Cinnamon",
+"Morrissey - The First Of The Gang To Die",
+"Ian Brown - Stellify",
+"The Hollies - He Ain't Heavy, He's My Brother",
+"The Slow Readers Club - Lunatic",
+"The Mock Turtles - Can You Dig It?",
+"The Smiths - There Is a Light That Never Goes Out",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -9753,7 +9760,7 @@ const Songbook = [
 { url: "https://soundcloud.com/ash/kung-fu-2008-remastered", answer: "ASH - Kung Fu" },
 { url: "https://soundcloud.com/the-house-of-love/shine-on", answer: "The House Of Love - Shine On", title: "Britpopple 80s 80s 80s", shareTags: "@Britpopple #80s80s80s #Heardle" },
 { url: "https://soundcloud.com/thecharlatans/weirdo", answer: "The Charlatans - Weirdo" },
-{ url: "https://soundcloud.com/inspiralcarpetsmusic/saturn-5", answer: "Inspiral Carpets - Saturn 5" },
+{ url: "https://soundcloud.com/inspiralcarpetsmusic/saturn-5", answer: "Inspiral Carpets - Saturn 5", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 { url: "https://soundcloud.com/dodgy-official/in-a-room-full-version", answer: "Dodgy - In A Room" },
 { url: "https://soundcloud.com/space-the-band/avenging-angels-1", answer: "Space - Avenging Angels" },
 { url: "https://soundcloud.com/suede-official/metal-mickey-1", answer: "Suede - Metal Mickey", startAtMs: 1000 },
@@ -10033,7 +10040,7 @@ const Songbook = [
 { url: "https://soundcloud.com/dodgy-official/found-you", answer: "Dodgy - Found You" },
 { url: "https://soundcloud.com/sleeperofficial/shes-a-good-girl", answer: "Sleeper - She's a Good Girl" },
 { url: "https://soundcloud.com/sleeperofficial/romeo-me", answer: "Sleeper - Romeo Me" },
-{ url: "https://soundcloud.com/joy-division-3/love-will-tear-us-apart", answer: "Joy Division - Love Will Tear Us Apart", title: "Britpopple 80s 80s 80s", shareTags: "@Britpopple #80s80s80s #Heardle" },
+{ url: "https://soundcloud.com/joy-division-3/love-will-tear-us-apart", answer: "Joy Division - Love Will Tear Us Apart", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 { url: "https://soundcloud.com/the-jam-official/start-remastered", answer: "The Jam - Start!", title: "Britpopple 80s 80s 80s", shareTags: "@Britpopple #80s80s80s #Heardle" },
 { url: "https://soundcloud.com/the-bunnymen/the-killing-moon-1", answer: "Echo And The Bunnymen - The Killing Moon", title: "Britpopple 80s 80s 80s", shareTags: "@Britpopple #80s80s80s #Heardle" },
 { url: "https://soundcloud.com/thecureofficial/in-between-days", answer: "The Cure - In Between Days", title: "Britpopple 80s 80s 80s", shareTags: "@Britpopple #80s80s80s #Heardle" },
@@ -10105,6 +10112,13 @@ const Songbook = [
 { url: "https://soundcloud.com/foofighters/this-is-a-call", answer: "Foo Fighters - This Is A Call", startAtMs: 5200, title: "Britpopple World Tour", shareTags: "@Britpopple #WorldTour #Heardle" },
 { url: "https://soundcloud.com/manicstreetpreachers/you-love-us-remastered", answer: "Manic Street Preachers - You Love Us" },
 { url: "https://soundcloud.com/manicstreetpreachers/faster-remastered", answer: "Manic Street Preachers - Faster", startAtMs: 9500 },
+{ url: "https://soundcloud.com/the-stone-roses/sally-cinnamon-single-mix", answer: "The Stone Roses - Sally Cinnamon", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/morrisseyofficial/the-first-of-the-gang-to-die", answer: "Morrissey - The First Of The Gang To Die", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/ian-brown-official/stellify", answer: "Ian Brown - Stellify", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/thehollies-sc/he-aint-heavy-hes-my-brother", answer: "The Hollies - He Ain't Heavy, He's My Brother", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/theslowreadersclub/lunatic-the-slow-readers-club-1", answer: "The Slow Readers Club - Lunatic", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/the-mock-turtles-official/can-you-dig-it", answer: "The Mock Turtles - Can You Dig It?", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/thesmiths/there-is-a-light-that-never-goes-out", answer: "The Smiths - There Is a Light That Never Goes Out", startAtMs: 600, title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11697,6 +11711,16 @@ const Playlist = [
 176,
 289,
 217,
+432,
+504,
+505,
+152,
+347,
+506,
+507,
+508,
+509,
+510,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
