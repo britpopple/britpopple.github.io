@@ -9606,6 +9606,7 @@ var app = (function() {
 "The Slow Readers Club - Lunatic",
 "The Mock Turtles - Can You Dig It?",
 "The Smiths - There Is a Light That Never Goes Out",
+"Radiohead - Street Spirit (Fade Out)",
 ];
 const Songbook = [
 { url: "https://soundcloud.com/spacehog-official/in-the-meantime", answer: "Spacehog - In the Meantime" },
@@ -10119,6 +10120,7 @@ const Songbook = [
 { url: "https://soundcloud.com/theslowreadersclub/lunatic-the-slow-readers-club-1", answer: "The Slow Readers Club - Lunatic", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 { url: "https://soundcloud.com/the-mock-turtles-official/can-you-dig-it", answer: "The Mock Turtles - Can You Dig It?", title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
 { url: "https://soundcloud.com/thesmiths/there-is-a-light-that-never-goes-out", answer: "The Smiths - There Is a Light That Never Goes Out", startAtMs: 600, title: "Britpopple Made in MCR", shareTags: "@Britpopple #MadeInMCR #Heardle" },
+{ url: "https://soundcloud.com/radiohead/street-spirit-fade-out", answer: "Radiohead - Street Spirit (Fade Out)" },
 ];
   const Cn = ue(Songlist),
     On = {
@@ -11724,6 +11726,7 @@ const Playlist = [
 88,
 109,
 71,
+511,
 ];
 const SongOfTheDay = () => Songbook[Playlist[SongId(Vt.startDate)]];
   var Pn;
